@@ -5,7 +5,7 @@
   "main": "server/server.js",
   "scripts": {
     "start": "cd server && npm run seed && node server.js",
-    "develop": "cd server && npm run watch\" \"cd client && npm start\"",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build"
@@ -18,5 +18,13 @@
   },
   "dependencies": {
     "nodemon": "^2.0.12"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashiemotto/shop-shop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ashiemotto/shop-shop/issues"
+  },
+  "homepage": "https://github.com/ashiemotto/shop-shop#readme"
 }
